@@ -4934,7 +4934,9 @@ a img {
     .header-icons .icon {
         width: 35px;
         height: 35px;
-        font-size: 35px
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
     }
 }
 
@@ -5008,6 +5010,11 @@ a img {
 
 .user-details {
     text-align: center;
+    margin: 5px auto
+}
+
+.user-bio {
+    text-align: justify;
     margin: 5px auto
 }
 
