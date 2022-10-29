@@ -5,7 +5,7 @@
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100% 
 }
 
 body {
@@ -58,6 +58,7 @@ a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects
 }
+
 
 abbr[title] {
     border-bottom: none;
@@ -296,7 +297,7 @@ template {
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .fa-lg {
@@ -2016,7 +2017,7 @@ template {
 
 .fa-graduation-cap:before,
 .fa-mortar-board:before {
-    content: "\f19d"
+    content: "\f19d";
 }
 
 .fa-yahoo:before {
@@ -4880,7 +4881,7 @@ a img {
 
 @media only screen and (min-width:550px) {
     .header .site-description {
-        font-size: 40px
+        font-size: 30px
     }
 }
 
@@ -4901,10 +4902,9 @@ a img {
     }
 }
 
+
 .header-icons {
-    display: flex;
-    justify-content: center;
-    text-align: center
+
 }
 
 .down,
@@ -4914,13 +4914,14 @@ a img {
 }
 
 .header-icons .icon {
-    height: 20px;
-    padding: 10px;
+    text-align: center;
     border-radius: 50%;
     border: 2px solid #fff;
     transition: all .7s;
-    width: 20px;
-    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    padding: 10px;
     margin: 5px
 }
 
@@ -4932,11 +4933,12 @@ a img {
 
 @media only screen and (min-width:550px) {
     .header-icons .icon {
-        width: 35px;
-        height: 35px;
+        width: 55px;
+        height: 55px;
         font-size: 30px;
         padding: 10px;
         text-align: center;
+        margin: 5px
     }
 }
 
@@ -5010,7 +5012,7 @@ a img {
 
 .user-details {
     text-align: center;
-    margin: 5px auto
+    margin: 5px auto;
 }
 
 .user-bio {
@@ -5064,7 +5066,7 @@ a img {
 
     .contents,
     .contents-right {
-        margin-top: -5%
+        margin-top: -3%
     }
 
     .contents-right,
@@ -5079,7 +5081,9 @@ a img {
 
     .images-left {
         float: left;
-        width: 48%
+        width: 40%;
+        margin-left: 4%;
+        margin-right: 4% ;
     }
 
     .images-left img {

@@ -22,10 +22,43 @@
     <title>Yu Zhao</title>
 
     <!-- Import CSS: Main Stylesheet -->
+
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
   <body>
+
+
+    <!-- Navigation -->
+    <section id="navigation">
+      <div class="nav-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+    </section>
+    <div id="nav-content">
+      <div class="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+      <div class="wrapper">
+        <h2 class="section-heading">Menu</h2>
+        <nav>
+          <ul>
+            <li><a data-text="Home" href="./index.html">Home</a></li>
+            <li><a data-text="About" href="./index.html#about">About</a></li>
+            <li><a data-text="Publications" href="./index.html#publications">Publications</a></li>
+            <li><a data-text="Projects" href="./index.html#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+
     <div id="particles-js">
       <div class="header">
         <h1>
@@ -44,15 +77,16 @@
             </a>
             <a aria-label="My Résumé" target="_blank" href="./assets/doc/Yu_Zhao_cv.pdf">
                 <!--https://www.adityavsingh.com/resume.html-->
-                <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
             <a aria-label="Send Email" href="mailto:yu.zhao@vanderbilt.edu" target="_blank">
                 <i class="icon fa fa-envelope"></i>
             </a>
         </div>
         <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#publications" data-scroll>Publications</a>
+          <a class="link" href="./index.html#about" data-scroll>About Me</a>
+          <a class="link" href="./index.html#publications" data-scroll>Publications</a>
+          <a class="link" href="./index.html#projects" data-scroll>Projects</a>  
         </div>
       </div>
       <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -62,7 +96,8 @@
     <section id="about">
         <!-- User Introduction-->
         <div class="user-details">
-            <h1>About Me</h1>
+            <!-- <h1>About Me</h1>-->
+            <h2 class="section-heading" data-outline="About">About</h2>
             <picture>
                 <source type="image/webp"
                         srcset="./assets/img/webp/Yu Zhao-Picture.png"
@@ -83,83 +118,112 @@
             <p>
                 Nashville, TN, USA
             </p>
-            <p>
-                Email : yu.zhao@vanderbilt.edu
-            </p>
             <p class="user-bio">
-                I'm a PhD student in Department of Computer Science at Vanderbilt University. I'm advised by Dr. Bobby Bodenheimer.
-                My research lies at the intersection of virtual/augmented reality, human-computer interaction, and spatial cognition. 
-                In my research, I quantify human spatial perception and cognition in mixed realities (i.e., virtual and augmented reality) to understand the quality of the virtual content and how it affects the interaction of people with immersive technology. 
-               
-                Currently, I am investigating how to effectively leverage AR cues to facilitate observers with different abilities to understand their spatial environments by conducting experiments in outdoor surroundings. 
-                I hope my work is an early step in AR/VR and HCI community to distill design guidelines for large-scale outdoor AR applications and contribute to accessibility research towards more inclusive AR technologies.
+                I'm a PhD student in Department of Computer Science at Vanderbilt University. I'm advised by <a  href="https://engineering.vanderbilt.edu/bio/robert-bodenheimer" ><span style="text-decoration:underline">Dr. Bobby Bodenheimer</span></a>.
+                My research lies at the intersection of virtual & augmented reality (VR&AR), human-computer interaction, and spatial perception & cognition.
+                In my research, I quantify human spatial perception and cognition in my research to better understand how virtual content in VR&AR affects human behavior and interaction.
+
+                I am currently investigating how to effectively use AR cues to help people with varying abilities understand their spatial environments by conducting experiments in both real-world and simulated virtual environments.
+                I hope my work will contribute to inform inclusive AR technologies and provide design guidelines for AR pedestrian navigation systems.
             </p>
         </div>
-        
-    <!-- User Specifics -->
-        <div class="user">
-            <!-- Technology Stack #1: Languages -->
-            <!--
-    <div class="tech">
-        <h2>Languages</h2>
-        <i class="devicon-python-plain colored"></i>
-        <i class="devicon-java-plain-wordmark colored"></i>
-        <i class="devicon-cplusplus-plain colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
-        <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
-    </div>
-                -->
-            <!-- Technology Stack #2: Front-End -->
-            <!--
-    <div class="tech">
-        <h2>Front-End</h2>
-        <i class="devicon-react-original colored"></i>
-        <i class="devicon-bootstrap-plain-wordmark colored"></i>
-        <i class="devicon-html5-plain-wordmark colored"></i>
-        <i class="devicon-css3-plain-wordmark colored"></i>
-        <p>My preferred technologies for front-end web development and component design.</p>
-    </div>
-                -->
-            <!-- Technology Stack #3: Back-End -->
-            <!--
-    <div class="tech">
-        <h2>Back-End</h2>
-        <i class="devicon-nodejs-plain colored"></i>
-        <i class="devicon-express-original-wordmark colored"></i>
-        <i class="devicon-mongodb-plain-wordmark colored"></i>
-        <i class="devicon-postgresql-plain-wordmark colored"></i>
-        <p>My preferred technologies for back-end web programming and database architecture.</p>
-    </div>
-                -->
-            <!-- Technology Stack #4: Tools -->
-            <!--
-    <div class="tech">
-        <h2>Tools</h2>
-        <i class="devicon-git-plain-wordmark colored"></i>
-        <i class="devicon-visualstudio-plain colored"></i>
-        <i class="devicon-github-plain-wordmark colored"></i>
-        <i class="devicon-docker-plain-wordmark colored"></i>
-        <p>My favorite tools for version control, code editing, and container orchestration.</p>
-    </div>
-        -->
-        </div>
-
     </section>
 
-    <!-- Projects Section -->
+
+
+
+
+    <!-- Projects(publications) Section -->
     <section id="publications">
+        <h2 class="section-heading" data-outline="Publications">Publications</h2>
+        <!--
         <div class="user-details">
             <h1>Publications</h1>
         </div>
+        -->
 
-
-
-        <!-- User Project #2: Gap Affordance Judgments in Mixed Reality: Testing the Role of Display Weight and Field of View -->
+        <!-- User Project #1: Gap Affordance Judgments in Mixed Reality: Testing the Role of Display Weight and Field of View -->
         <div class="user-projects">
             <div class="images-left">
                 <picture>
-                    <source type="image/webp" srcset="./assets/img/webp/Gap Affordance Judgments in Mixed Reality Testing the Role of Display Weight and Field of View.png" />
-                    <img src="./assets/img/jpg/Gap Affordance Judgments in Mixed Reality Testing the Role of Display Weight and Field of View.png" />
+                    <source type="image/webp" srcset="./assets/img/webp/SAP.png" />
+                    <img src="./assets/img/jpg/SAP.png" />
+                </picture>
+            </div>
+            <div class="contents-right" style="text-align: justify">
+                <h3> The Perception of Affordances in Mobile Augmented Reality</h3>
+                <!--
+            <div>
+                <img height="32"
+                     width="32"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
+                     style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                &nbsp;
+                <img height="32"
+                     width="32"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
+                     style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)" />
+                &nbsp;
+                <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+            </div>
+                  -->
+                <p style="text-align: justify">
+                    <span class="highlight">Yu Zhao</span>, Jeanine K Stefanucci, Sarah H Creem-Regehr, Bobby Bodenheimer
+                </p>
+                <p style="text-align: justify">
+                    ACM Symposium on Applied Perception 2021
+                </p>
+                <a class="project-link" target="_blank" href="https://dl.acm.org/doi/10.1145/3474451.3476239">FULL TEXT</a>
+                <a class="project-link" target="_blank" href="./assets/doc/SAP Mobile Affordance Final.pdf">SLIDES</a>
+            </div>
+        </div>
+
+
+        <!-- User Project #2: Remote Mobile Augmented Reality for Spatial Cognition -->
+        <div class="user-projects">
+            <div class="images-left">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/Remote Mobile Augmented Reality for Spatial Cognition.png" />
+                    <img src="./assets/img/jpg/Remote Mobile Augmented Reality for Spatial Cognition.png" />
+                </picture>
+            </div>
+            <div class="contents-right" style="text-align: justify">
+                <h3> Remote Mobile Augmented Reality for Spatial Cognition</h3>
+                <!--
+            <div>
+                <img height="32"
+                     width="32"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
+                     style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                &nbsp;
+                <img height="32"
+                     width="32"
+                     src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
+                     style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)" />
+                &nbsp;
+                <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+            </div>
+                  -->
+                <p style="text-align: justify">
+                    <span class="highlight">Yu Zhao</span>
+                    ,Chakraborty Soumyajit,Jeanine K Stefanucci, Sarah H Creem-Regehr, Bobby Bodenheimer
+                </p>
+                <p style="text-align: justify">
+                    2021 CHI Conference on Human Factors in Computing Systems - Remote XR Workshop
+                </p>
+                <a class="project-link" target="_blank" href="https://www.researchgate.net/profile/Yu_Zhao213/publication/359875988_Remote_Mobile_Augmented_Reality_for_Spatial_Cognition/links/62545a17cf60536e2354f294/Remote-Mobile-Augmented-Reality-for-Spatial-Cognition.pdf">PDF</a>
+                <a class="project-link" target="_blank" href="./assets/doc/Chi Remote XR.pdf">SLIDES</a>
+            </div>
+        </div>
+
+
+
+        <!-- User Project #3: Gap Affordance Judgments in Mixed Reality: Testing the Role of Display Weight and Field of View -->
+        <div class="user-projects">
+            <div class="images-left">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/Visual Abstract - Gap Affordance Judgments in Mixed Reality Testing the Role of Display Weight and Field of View.png" />
+                    <img src="./assets/img/jpg/Visual Abstract - Gap Affordance Judgments in Mixed Reality Testing the Role of Display Weight and Field of View.png" />
                 </picture>
             </div>
             <div class="contents-right" style="text-align: justify">
@@ -181,8 +245,7 @@
                   -->
                 <p style="text-align: justify">
                     Holly C Gagnon,
-                    <span class="highlight">Yu Zhao</span>
-                    , Matthew Richardson, Grant D Pointon, Jeanine K Stefanucci, Sarah H Creem-Regehr, Bobby Bodenheimer
+                    <span class="highlight">Yu Zhao</span>, Matthew Richardson, Grant D Pointon, Jeanine K Stefanucci, Sarah H Creem-Regehr, Bobby Bodenheimer
                 </p>
                 <p style="text-align: justify">
                     Frontiers in Virtual Reality
@@ -192,7 +255,7 @@
         </div>
 
 
-        <!-- User Project #1: The Effect of Feedback on Estimates of Reaching Ability in Virtual Reality -->
+        <!-- User Project #4: The Effect of Feedback on Estimates of Reaching Ability in Virtual Reality -->
         <div class="user-projects">
             <div class="images-left">
                 <picture>
@@ -219,8 +282,7 @@
                   -->
                 <p style="text-align: justify">
                     Holly C Gagnon, Taren Rohovit, Hunter Finney,
-                    <span class="highlight">Yu Zhao</span>
-                   , John M Franchak, Jeanine K Stefanucci, Bobby Bodenheimer, Sarah H Creem-Regehr
+                    <span class="highlight">Yu Zhao</span>, John M Franchak, Jeanine K Stefanucci, Bobby Bodenheimer, Sarah H Creem-Regehr
                 </p>
                 <p style="text-align: justify">
                     2021 IEEE Virtual Reality and 3D User Interfaces (VR)
@@ -229,7 +291,7 @@
             </div>
         </div>
 
-        <!-- User Project #3: Affordance Judgments in Mobile Augmented Reality with Cues -->
+        <!-- User Project #5: Affordance Judgments in Mobile Augmented Reality with Cues -->
         <div class="user-projects">
             <div class="images-left">
                 <picture>
@@ -255,17 +317,17 @@
             </div>
                   -->
                 <p style="text-align: justify">
-                    <span class="highlight">Yu Zhao</span>
-                   , Jeanine Stefanucci, Sarah Creem-Regehr, Bobby Bodenheimer
+                    <span class="highlight">Yu Zhao</span>, Jeanine Stefanucci, Sarah Creem-Regehr, Bobby Bodenheimer
                 </p>
                 <p style="text-align: justify">
                     2021 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)
                 </p>
                 <a class="project-link" target="_blank" href="https://www.researchgate.net/profile/Yu_Zhao213/publication/351195650_Affordance_Judgments_in_Mobile_Augmented_Reality_with_Cues/links/608b2f3b92851c490fa76f6c/Affordance-Judgments-in-Mobile-Augmented-Reality-with-Cues.pdf">FULL TEXT</a>
+                <a class="project-link" target="_blank" href="https://www.youtube.com/watch?v=3gs2BlYrRdA">VIDEO</a>
             </div>
         </div>
 
-        <!-- User Project #4: Effects of home environment structure on navigation preference and performance: A comparison in Veneto, Italy and Utah, USA -->
+        <!-- User Project #6: Effects of home environment structure on navigation preference and performance: A comparison in Veneto, Italy and Utah, USA -->
         <div class="user-projects">
             <div class="images-left">
                 <picture>
@@ -292,8 +354,7 @@
                   -->
                 <p style="text-align: justify">
                     Erica M Barhorst-Cates, Chiara Meneghetti,
-                    <span class="highlight">Yu Zhao</span>
-                   , Francesca Pazzaglia, Sarah H Creem-Regehr
+                    <span class="highlight">Yu Zhao</span>, Francesca Pazzaglia, Sarah H Creem-Regehr
                 </p>
                 <p style="text-align: justify">
                     Journal of Environmental Psychology
@@ -302,11 +363,70 @@
             </div>
         </div>
 
+    </section>\
 
 
+    <!-- Added projects -->
+  <section id="projects">
+  <div class="container">
+  <h2 class="section-heading" data-outline="Projects">Projects</h2>
+  <div class="all-items">
+    <div class="item">
+      <div class="left">
+        <div class="img">
+          <img src="./image/Project-HoloNav.jpg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <h2 class="project-title">Global-scale Outdoor AR Experience</h2>
+        <h3 class="project-sub-title">HoloLens 2 + GNSS</h3>
+        <p class="project-desc">This project's goal is to investigate an outdoor AR navigation experience in the field in order to inform the navigation design in AR googles.
+          People can navigate using existing AR cues (e.g., augmented landmarks) and add virtual markers to help them remember their surroundings.</p>
+        <div class="buttons">
+          <!--<a href="#" class="primary-btn">Know More</a>-->
+          <a href="https://youtu.be/fqjOO3_votQ" class="primary-btn outline external-link"> <span>Preview</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
 
 
-    </section>
+    <div class="item">
+      <div class="left">
+        <div class="img">
+          <img src="./image/Simulated Environment.png" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <h2 class="project-title">Efficiency of AR Cues for Spatial Knowledge Acquisition
+        </h2>
+        <h3 class="project-sub-title"> Varjo XR-3 + Eye Tracking
+        </h3>
+        <p class="project-desc">Investigating AR cue design in a simulated urban setting to control real-world distractions and equate environment novelty. </p>
+        <div class="buttons">
+          <!--
+          <a href="#" class="primary-btn">Know More</a>
+          <a href="#" class="primary-btn outline external-link"> <span>Preview</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        -->
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+</section>
+
+
             <footer class="footer">
                 <p>&copy; Yu Zhao, 2021</p>
             </footer>
@@ -318,5 +438,10 @@
             <script src="./assets/js/google-analytics.js"></script>
             <!-- Import JS: Main Script -->
             <script src="./assets/js/main.js"></script>
+
+            <script src="./assets/js/app.js"></script>
+
+
+
 </body>
 </html>
